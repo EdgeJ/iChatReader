@@ -11,7 +11,7 @@ struct ContentView: View {
     @Binding var document: iChatOpenerDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        Text(document.text)
     }
 }
 

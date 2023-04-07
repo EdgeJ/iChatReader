@@ -9,8 +9,8 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension UTType {
-    static var exampleText: UTType {
-        UTType(importedAs: "com.example.plain-text")
+    static var ichat: UTType {
+        UTType(filenameExtension: "ichat")!
     }
 }
 
@@ -21,7 +21,7 @@ struct iChatOpenerDocument: FileDocument {
         self.text = text
     }
 
-    static var readableContentTypes: [UTType] { [.exampleText] }
+    static var readableContentTypes: [UTType] { [.ichat, .binaryPropertyList,] }
 
     init(configuration: ReadConfiguration) throws {
         guard let data = configuration.file.regularFileContents,
