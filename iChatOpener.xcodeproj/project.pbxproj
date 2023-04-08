@@ -18,6 +18,7 @@
 		B532255129E10D2F0068A8A5 /* StubCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254B29E10D2F0068A8A5 /* StubCoder.m */; };
 		B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254C29E10D2F0068A8A5 /* InstantMessage.m */; };
 		B532255329E10D2F0068A8A5 /* Presentity.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254F29E10D2F0068A8A5 /* Presentity.m */; };
+		B532255529E206220068A8A5 /* iChatDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B532255429E206220068A8A5 /* iChatDecoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		B532254E29E10D2F0068A8A5 /* InstantMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstantMessage.h; sourceTree = "<group>"; };
 		B532254F29E10D2F0068A8A5 /* Presentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presentity.m; sourceTree = "<group>"; };
 		B532255029E10D2F0068A8A5 /* StubCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubCoder.h; sourceTree = "<group>"; };
+		B532255429E206220068A8A5 /* iChatDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iChatDecoder.m; sourceTree = "<group>"; };
+		B532255629E206380068A8A5 /* iChatDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iChatDecoder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 		B53224F929E07C3B0068A8A5 /* iChatOpener */ = {
 			isa = PBXGroup;
 			children = (
+				B532255429E206220068A8A5 /* iChatDecoder.m */,
+				B532255629E206380068A8A5 /* iChatDecoder.h */,
 				B532254E29E10D2F0068A8A5 /* InstantMessage.h */,
 				B532254C29E10D2F0068A8A5 /* InstantMessage.m */,
 				B532254D29E10D2F0068A8A5 /* Presentity.h */,
@@ -287,6 +292,7 @@
 				B532255329E10D2F0068A8A5 /* Presentity.m in Sources */,
 				B53224FD29E07C3B0068A8A5 /* iChatOpenerDocument.swift in Sources */,
 				B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */,
+				B532255529E206220068A8A5 /* iChatDecoder.m in Sources */,
 				B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

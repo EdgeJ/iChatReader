@@ -24,10 +24,17 @@ struct iChatOpenerDocument: FileDocument {
     static var readableContentTypes: [UTType] { [.ichat, .binaryPropertyList,] }
 
     init(configuration: ReadConfiguration) throws {
-        guard let data = configuration.file.regularFileContents,
-              let string = String(data: data, encoding: .utf8)
-        else {
+        var string = ""
+        
+        guard let data = configuration.file.regularFileContents else {
             throw CocoaError(.fileReadCorruptFile)
+        }
+        
+        let ims = IChatDecoder(data) as! NSMutableArray
+        for i in ims {
+            if let im = i as? InstantMessage {
+                string = string + im.toJSONString()
+            }
         }
         text = string
     }
