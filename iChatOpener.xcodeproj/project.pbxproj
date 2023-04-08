@@ -15,6 +15,9 @@
 		B532251029E07C3C0068A8A5 /* iChatOpenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532250F29E07C3C0068A8A5 /* iChatOpenerTests.swift */; };
 		B532251A29E07C3C0068A8A5 /* iChatOpenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532251929E07C3C0068A8A5 /* iChatOpenerUITests.swift */; };
 		B532251C29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532251B29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift */; };
+		B532255129E10D2F0068A8A5 /* StubCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254B29E10D2F0068A8A5 /* StubCoder.m */; };
+		B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254C29E10D2F0068A8A5 /* InstantMessage.m */; };
+		B532255329E10D2F0068A8A5 /* Presentity.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254F29E10D2F0068A8A5 /* Presentity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,13 @@
 		B532251529E07C3C0068A8A5 /* iChatOpenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iChatOpenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B532251929E07C3C0068A8A5 /* iChatOpenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerUITests.swift; sourceTree = "<group>"; };
 		B532251B29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B532254A29E10D2F0068A8A5 /* iChatOpener-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iChatOpener-Bridging-Header.h"; sourceTree = "<group>"; };
+		B532254B29E10D2F0068A8A5 /* StubCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubCoder.m; sourceTree = "<group>"; };
+		B532254C29E10D2F0068A8A5 /* InstantMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstantMessage.m; sourceTree = "<group>"; };
+		B532254D29E10D2F0068A8A5 /* Presentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presentity.h; sourceTree = "<group>"; };
+		B532254E29E10D2F0068A8A5 /* InstantMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstantMessage.h; sourceTree = "<group>"; };
+		B532254F29E10D2F0068A8A5 /* Presentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presentity.m; sourceTree = "<group>"; };
+		B532255029E10D2F0068A8A5 /* StubCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubCoder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,12 @@
 		B53224F929E07C3B0068A8A5 /* iChatOpener */ = {
 			isa = PBXGroup;
 			children = (
+				B532254E29E10D2F0068A8A5 /* InstantMessage.h */,
+				B532254C29E10D2F0068A8A5 /* InstantMessage.m */,
+				B532254D29E10D2F0068A8A5 /* Presentity.h */,
+				B532254F29E10D2F0068A8A5 /* Presentity.m */,
+				B532255029E10D2F0068A8A5 /* StubCoder.h */,
+				B532254B29E10D2F0068A8A5 /* StubCoder.m */,
 				B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */,
 				B53224FC29E07C3B0068A8A5 /* iChatOpenerDocument.swift */,
 				B53224FE29E07C3B0068A8A5 /* ContentView.swift */,
@@ -105,6 +121,7 @@
 				B532250529E07C3C0068A8A5 /* Info.plist */,
 				B532250629E07C3C0068A8A5 /* iChatOpener.entitlements */,
 				B532250229E07C3C0068A8A5 /* Preview Content */,
+				B532254A29E10D2F0068A8A5 /* iChatOpener-Bridging-Header.h */,
 			);
 			path = iChatOpener;
 			sourceTree = "<group>";
@@ -266,8 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53224FB29E07C3B0068A8A5 /* iChatOpenerApp.swift in Sources */,
+				B532255129E10D2F0068A8A5 /* StubCoder.m in Sources */,
+				B532255329E10D2F0068A8A5 /* Presentity.m in Sources */,
 				B53224FD29E07C3B0068A8A5 /* iChatOpenerDocument.swift in Sources */,
 				B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */,
+				B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edgej.iChatOpener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iChatOpener/iChatOpener-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -468,6 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edgej.iChatOpener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iChatOpener/iChatOpener-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
