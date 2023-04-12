@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5196A7129E508B600503BD4 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = B5196A7029E508B600503BD4 /* SwiftSoup */; };
 		B53224FB29E07C3B0068A8A5 /* iChatOpenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */; };
 		B53224FD29E07C3B0068A8A5 /* iChatOpenerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FC29E07C3B0068A8A5 /* iChatOpenerDocument.swift */; };
 		B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FE29E07C3B0068A8A5 /* ContentView.swift */; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5196A7129E508B600503BD4 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +174,9 @@
 			dependencies = (
 			);
 			name = iChatOpener;
+			packageProductDependencies = (
+				B5196A7029E508B600503BD4 /* SwiftSoup */,
+			);
 			productName = iChatOpener;
 			productReference = B53224F729E07C3B0068A8A5 /* iChatOpener.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +250,9 @@
 				Base,
 			);
 			mainGroup = B53224EE29E07C3B0068A8A5;
+			packageReferences = (
+				B5196A6F29E508B600503BD4 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = B53224F829E07C3B0068A8A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -608,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5196A6F29E508B600503BD4 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5196A7029E508B600503BD4 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5196A6F29E508B600503BD4 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B53224EF29E07C3B0068A8A5 /* Project object */;
 }

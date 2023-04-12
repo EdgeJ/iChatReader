@@ -7,34 +7,19 @@
 
 import SwiftUI
 
-struct HTMLStringView: View {
-    let htmlContent: String
-    
-    var fontName = "Helvetica"
-    var fontSize: CGFloat = 12
-    
-    func parseHTML(html: String) -> String {
-        return html
-    }
-    
-    var body: some View {
-        Text(parseHTML(html: htmlContent))
-            .font(Font.custom(fontName, size: fontSize))
-            .foregroundColor(.black)
-            .colorInvert()
-    }
-}
-
 struct ContentView: View {
     @Binding var document: iChatOpenerDocument
 
     var body: some View {
-        List(document.messages, id: \.self){ iChatMessage in
+        List(document.messages, id: \.self){ im in
             VStack(alignment: .leading) {
-                Text(iChatMessage.sender)
+                // Ignore parsing failures, since messageBody will default to raw html.
+                let _ = try? im.parse()
+                Text(im.senderName)
                     .font(.headline)
-                HTMLStringView(htmlContent: iChatMessage.message)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                Text(im.messageBody)
+                    .font(Font.custom(im.messageFontName, size: im.messageFontSize))
+                    .textSelection(.enabled)
             }
         }
     }
