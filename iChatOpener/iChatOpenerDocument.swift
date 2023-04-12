@@ -30,19 +30,22 @@ class iChatMessage: Hashable {
         senderName = sender
         messageRaw = message
         messageBody = message
-        messageFontName = "Helvetica"
+        messageFontName = "San Francisco"
         messageFontSize = 12
     }
     
     func parse() throws {
         do {
             let doc: Document = try SwiftSoup.parse(messageRaw)
-            let font: Element = try doc.select("font").first()!
             self.messageBody = try doc.text()
-            self.messageFontName = try font.attr("face")
-            if let fontSizeStr = try? font.attr("ABSZ") {
-                if let fontSizeNum = NumberFormatter().number(from: fontSizeStr) {
-                    self.messageFontSize = CGFloat(truncating: fontSizeNum)
+            if let font: Element = try? doc.select("font").first() {
+                if let fontName = try? font.attr("face") {
+                    self.messageFontName = fontName
+                }
+                if let fontSizeStr = try? font.attr("ABSZ") {
+                    if let fontSizeNum = NumberFormatter().number(from: fontSizeStr) {
+                        self.messageFontSize = CGFloat(truncating: fontSizeNum)
+                    }
                 }
             }
         } catch Exception.Error(_, let message) {
@@ -87,7 +90,12 @@ struct iChatOpenerDocument: FileDocument {
         let ims = IChatDecoder(data) as NSMutableArray
         for i in ims {
             if let im = i as? InstantMessage {
-                messages.append(iChatMessage(sender: im.sender.accountName, message: im.message))
+                var name = "System" // Fallthrough to system user if no other user is found
+                if let sender = im.sender {
+                    name = sender.accountName
+                }
+                let message = im.message ?? ""
+                messages.append(iChatMessage(sender: name, message: message))
                 string = string + im.toJSONString()
             }
         }
