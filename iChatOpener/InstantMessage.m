@@ -16,7 +16,8 @@
     _sender = [decoder decodeObjectForKey:@"Sender"];
     _subject = [decoder decodeObjectForKey:@"Subject"];
     _date = [decoder decodeObjectForKey:@"Time"];
-    _message = [decoder decodeObjectForKey:@"OriginalMessage"];
+    // _message = [decoder decodeObjectForKey:@"OriginalMessage"];
+    _message = [decoder decodeObjectForKey:@"MessageText"];
     _files = [[NSMutableArray alloc] init];
     _isMultiParty = false;
     _isRead = [(NSNumber*)[decoder decodeObjectForKey:@"IsRead"] integerValue] == 1 ? true : false;
@@ -49,6 +50,7 @@
 - (void)encodeWithCoder:(NSCoder *)encoder;
 { NSAssert1(NO, @"%@ does not allow encoding.", [self class]); }
 
+/*
 - (NSString *) toJSONString;
 {
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
@@ -77,4 +79,5 @@
     }
     return jsonString;
 }
+ */
 @end

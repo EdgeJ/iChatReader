@@ -13,12 +13,10 @@ struct ContentView: View {
     var body: some View {
         List(document.messages, id: \.self){ im in
             VStack(alignment: .leading) {
-                // Ignore parsing failures, since messageBody will default to raw html.
-                let _ = try? im.parse()
-                Text(im.senderName)
+                Text(im.sender.accountName)
                     .font(.headline)
-                Text(im.messageBody)
-                    .font(Font.custom(im.messageFontName, size: im.messageFontSize))
+                Text(im.message.string)
+                    //.font(Font.custom(im.messageFontName, size: im.messageFontSize))
                     .textSelection(.enabled)
             }
         }

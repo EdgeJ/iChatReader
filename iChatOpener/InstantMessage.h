@@ -12,13 +12,14 @@
 @interface InstantMessage : NSObject <NSCoding /* Decoding only */>
 
 @property (readonly, copy) NSDate *date;
-@property (readonly, copy) NSString *message;
+// @property (readonly, copy) NSString *message;
+@property () NSAttributedString *message;
 @property (readonly, copy) NSMutableArray *files;
 @property () BOOL isMultiParty;
 @property () BOOL isRead;
 @property () NSSet *participantIds;
 @property () NSString *chatId;
-@property (readonly, copy) Presentity *sender;
+@property () Presentity *sender;
 @property (readonly, copy) Presentity *subject;
-- (NSString *) toJSONString;
+// - (NSString *) toJSONString;
 @end

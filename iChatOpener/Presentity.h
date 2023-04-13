@@ -10,7 +10,7 @@
 
 @interface Presentity : NSObject <NSCoding /* Decoding only */>
 
-@property (readonly, copy) NSString *accountName;
-@property (readonly, copy) NSString *serviceName;
+@property () NSString *accountName;
+@property () NSString *serviceName;
 
 @end

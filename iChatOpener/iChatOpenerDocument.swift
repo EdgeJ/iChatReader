@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftSoup
 import UniformTypeIdentifiers
 
 extension UTType {
@@ -15,73 +14,23 @@ extension UTType {
     }
 }
 
-class iChatMessage: Hashable {
-    let senderName: String
-    let messageRaw: String
-    var messageBody: String
-    var messageFontName: String
-    var messageFontSize: CGFloat
-    // var messageFontColor: String
-    
-    init(sender: String, message: String) {
-        // Initialize with some default values.
-        // These will typically be parsed to new values from the HTML string in the message body
-        // with the _parse() method.
-        senderName = sender
-        messageRaw = message
-        messageBody = message
-        messageFontName = "San Francisco"
-        messageFontSize = 12
-    }
-    
-    func parse() throws {
-        do {
-            let doc: Document = try SwiftSoup.parse(messageRaw)
-            self.messageBody = try doc.text()
-            if let font: Element = try? doc.select("font").first() {
-                if let fontName = try? font.attr("face") {
-                    self.messageFontName = fontName
-                }
-                if let fontSizeStr = try? font.attr("ABSZ") {
-                    if let fontSizeNum = NumberFormatter().number(from: fontSizeStr) {
-                        self.messageFontSize = CGFloat(truncating: fontSizeNum)
-                    }
-                }
-            }
-        } catch Exception.Error(_, let message) {
-            print(message)
-        } catch {
-            print("error")
-        }
-    }
-    
-    static func == (lhs: iChatMessage, rhs: iChatMessage) -> Bool {
-        return lhs.senderName == rhs.senderName && lhs.messageBody == rhs.messageBody
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(senderName)
-        hasher.combine(messageBody)
-    }
-}
-
 struct iChatOpenerDocument: FileDocument {
-    var text: String
-    var messages: [iChatMessage]
+    // var text: String
+    var messages: [InstantMessage]
 
     init(text: String = "Hello, world!") {
-        self.text = text
-        self.messages = [
-            iChatMessage(sender: "me",
-                         message: "<html><body ichatballooncolor=\"#7BB5EE\" ichattextcolor=\"#000000\"><font face=\"Helvetica\" size=3 ABSZ=12>Hello, world!</font></body></html>")
-        ]
+        // self.text = text
+        let im = InstantMessage()
+        let sender = Presentity()
+        sender.accountName = "me"
+        im.sender = sender
+        im.message = NSAttributedString(string: "Hello, world!")
+        self.messages = [im]
     }
 
     static var readableContentTypes: [UTType] { [.ichat, .binaryPropertyList,] }
 
     init(configuration: ReadConfiguration) throws {
-        var string = ""
-        
         guard let data = configuration.file.regularFileContents else {
             throw CocoaError(.fileReadCorruptFile)
         }
@@ -90,20 +39,23 @@ struct iChatOpenerDocument: FileDocument {
         let ims = IChatDecoder(data) as NSMutableArray
         for i in ims {
             if let im = i as? InstantMessage {
-                var name = "System" // Fallthrough to system user if no other user is found
-                if let sender = im.sender {
-                    name = sender.accountName
+                // Fallthrough to system user if no other user is found
+                if let _ = im.sender {
+                    // pass
+                } else {
+                    let sender = Presentity()
+                    sender.accountName = "System"
+                    im.sender = sender
                 }
-                let message = im.message ?? ""
-                messages.append(iChatMessage(sender: name, message: message))
-                string = string + im.toJSONString()
+                messages.append(im)
             }
         }
-        text = string
     }
     
+    // We don't really edit any ichat files, but .fileWrapper needs to be here to
+    // conform to the FileDocument protocol.
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = text.data(using: .utf8)!
-        return .init(regularFileWithContents: data)
+        let data = configuration.existingFile!.regularFileContents
+        return .init(regularFileWithContents: data!)
     }
 }
