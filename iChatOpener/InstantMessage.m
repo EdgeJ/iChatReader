@@ -20,9 +20,8 @@
     _files = [[NSMutableArray alloc] init];
     _isMultiParty = false;
     _isRead = [(NSNumber*)[decoder decodeObjectForKey:@"IsRead"] integerValue] == 1 ? true : false;
-    NSAttributedString *attrMsg = [decoder decodeObjectForKey:@"MessageText"];
-    NSArray *fileIds = [self getAttributesWithKey:@"__kIMFilenameAttributeName" fromAttributedString:attrMsg];
-    NSArray *fileNames = [self getAttributesWithKey:@"__kIMFileTransferGUIDAttributeName" fromAttributedString:attrMsg];
+    NSArray *fileIds = [self getAttributesWithKey:@"__kIMFilenameAttributeName" fromAttributedString:_message];
+    NSArray *fileNames = [self getAttributesWithKey:@"__kIMFileTransferGUIDAttributeName" fromAttributedString:_message];
     [fileIds enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSString *fileId = [fileIds objectAtIndex:idx];
         NSString *fileName = [fileNames objectAtIndex:idx];
