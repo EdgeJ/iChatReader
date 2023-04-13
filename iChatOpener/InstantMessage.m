@@ -16,7 +16,6 @@
     _sender = [decoder decodeObjectForKey:@"Sender"];
     _subject = [decoder decodeObjectForKey:@"Subject"];
     _date = [decoder decodeObjectForKey:@"Time"];
-    // _message = [decoder decodeObjectForKey:@"OriginalMessage"];
     _message = [decoder decodeObjectForKey:@"MessageText"];
     _files = [[NSMutableArray alloc] init];
     _isMultiParty = false;
@@ -49,35 +48,4 @@
 
 - (void)encodeWithCoder:(NSCoder *)encoder;
 { NSAssert1(NO, @"%@ does not allow encoding.", [self class]); }
-
-/*
-- (NSString *) toJSONString;
-{
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS"];
-    NSString *dateStr = [dateFormat stringFromDate:_date];
-    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                          [_sender accountName], @"sender",
-                          [_sender serviceName], @"service",
-                          _message == nil ? [NSNull null] : _message, @"message",
-                          dateStr, @"date",
-                          [NSNumber numberWithBool:_isMultiParty], @"isMultiParty",
-                          [NSNumber numberWithBool:_isRead], @"isRead",
-                          _subject ? [_subject accountName] : [NSNull null], @"subject",
-                          [_participantIds allObjects], @"participantIds",
-                          _chatId, @"chatId",
-                          _files, @"files",
-                          nil];
-
-    NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
-    NSString *jsonString;
-    if (! jsonData) {
-        NSLog(@"Got an error: %@", error);
-    } else {
-       jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    }
-    return jsonString;
-}
- */
 @end

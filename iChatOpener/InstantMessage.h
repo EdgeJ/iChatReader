@@ -12,7 +12,6 @@
 @interface InstantMessage : NSObject <NSCoding /* Decoding only */>
 
 @property (readonly, copy) NSDate *date;
-// @property (readonly, copy) NSString *message;
 @property () NSAttributedString *message;
 @property (readonly, copy) NSMutableArray *files;
 @property () BOOL isMultiParty;
@@ -21,5 +20,4 @@
 @property () NSString *chatId;
 @property () Presentity *sender;
 @property (readonly, copy) Presentity *subject;
-// - (NSString *) toJSONString;
 @end
