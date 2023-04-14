@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5196A7329E8C5DD00503BD4 /* iChatDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5196A7229E8C5DD00503BD4 /* iChatDecoder.swift */; };
-		B53224FB29E07C3B0068A8A5 /* iChatOpenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */; };
-		B53224FD29E07C3B0068A8A5 /* iChatDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FC29E07C3B0068A8A5 /* iChatDocument.swift */; };
-		B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FE29E07C3B0068A8A5 /* ContentView.swift */; };
-		B532250129E07C3C0068A8A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B532250029E07C3C0068A8A5 /* Assets.xcassets */; };
-		B532250429E07C3C0068A8A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B532250329E07C3C0068A8A5 /* Preview Assets.xcassets */; };
-		B532251029E07C3C0068A8A5 /* iChatOpenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532250F29E07C3C0068A8A5 /* iChatOpenerTests.swift */; };
-		B532251A29E07C3C0068A8A5 /* iChatOpenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532251929E07C3C0068A8A5 /* iChatOpenerUITests.swift */; };
-		B532251C29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532251B29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift */; };
-		B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254C29E10D2F0068A8A5 /* InstantMessage.m */; };
-		B532255329E10D2F0068A8A5 /* Presentity.m in Sources */ = {isa = PBXBuildFile; fileRef = B532254F29E10D2F0068A8A5 /* Presentity.m */; };
+		B532251029E07C3C0068A8A5 /* iChatReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532250F29E07C3C0068A8A5 /* iChatReaderTests.swift */; };
+		B532251A29E07C3C0068A8A5 /* iChatReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532251929E07C3C0068A8A5 /* iChatReaderUITests.swift */; };
+		B532251C29E07C3C0068A8A5 /* iChatReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532251B29E07C3C0068A8A5 /* iChatReaderUITestsLaunchTests.swift */; };
+		B572D09129E9F9E100B27EC7 /* iChatDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572D08429E9F9E100B27EC7 /* iChatDecoder.swift */; };
+		B572D09229E9F9E100B27EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B572D08629E9F9E100B27EC7 /* Assets.xcassets */; };
+		B572D09329E9F9E100B27EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B572D08929E9F9E100B27EC7 /* Preview Assets.xcassets */; };
+		B572D09429E9F9E100B27EC7 /* InstantMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B572D08A29E9F9E100B27EC7 /* InstantMessage.m */; };
+		B572D09529E9F9E100B27EC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572D08B29E9F9E100B27EC7 /* ContentView.swift */; };
+		B572D09629E9F9E100B27EC7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B572D08D29E9F9E100B27EC7 /* Info.plist */; };
+		B572D09729E9F9E100B27EC7 /* iChatDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572D08E29E9F9E100B27EC7 /* iChatDocument.swift */; };
+		B572D09829E9F9E100B27EC7 /* iChatReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572D08F29E9F9E100B27EC7 /* iChatReaderApp.swift */; };
+		B572D09929E9F9E100B27EC7 /* Presentity.m in Sources */ = {isa = PBXBuildFile; fileRef = B572D09029E9F9E100B27EC7 /* Presentity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,25 +39,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5196A7229E8C5DD00503BD4 /* iChatDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatDecoder.swift; sourceTree = "<group>"; };
-		B53224F729E07C3B0068A8A5 /* iChatOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerApp.swift; sourceTree = "<group>"; };
-		B53224FC29E07C3B0068A8A5 /* iChatDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatDocument.swift; sourceTree = "<group>"; };
-		B53224FE29E07C3B0068A8A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B532250029E07C3C0068A8A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B532250329E07C3C0068A8A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B532250529E07C3C0068A8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B532250629E07C3C0068A8A5 /* iChatOpener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iChatOpener.entitlements; sourceTree = "<group>"; };
-		B532250B29E07C3C0068A8A5 /* iChatOpenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iChatOpenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B532250F29E07C3C0068A8A5 /* iChatOpenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerTests.swift; sourceTree = "<group>"; };
-		B532251529E07C3C0068A8A5 /* iChatOpenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iChatOpenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B532251929E07C3C0068A8A5 /* iChatOpenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerUITests.swift; sourceTree = "<group>"; };
-		B532251B29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B532254A29E10D2F0068A8A5 /* iChatOpener-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iChatOpener-Bridging-Header.h"; sourceTree = "<group>"; };
-		B532254C29E10D2F0068A8A5 /* InstantMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstantMessage.m; sourceTree = "<group>"; };
-		B532254D29E10D2F0068A8A5 /* Presentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presentity.h; sourceTree = "<group>"; };
-		B532254E29E10D2F0068A8A5 /* InstantMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstantMessage.h; sourceTree = "<group>"; };
-		B532254F29E10D2F0068A8A5 /* Presentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presentity.m; sourceTree = "<group>"; };
+		B53224F729E07C3B0068A8A5 /* iChatReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B532250B29E07C3C0068A8A5 /* iChatReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iChatReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B532250F29E07C3C0068A8A5 /* iChatReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatReaderTests.swift; sourceTree = "<group>"; };
+		B532251529E07C3C0068A8A5 /* iChatReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iChatReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B532251929E07C3C0068A8A5 /* iChatReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatReaderUITests.swift; sourceTree = "<group>"; };
+		B532251B29E07C3C0068A8A5 /* iChatReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B572D08329E9F9E100B27EC7 /* iChatOpener.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = iChatOpener.entitlements; sourceTree = "<group>"; };
+		B572D08429E9F9E100B27EC7 /* iChatDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iChatDecoder.swift; sourceTree = "<group>"; };
+		B572D08529E9F9E100B27EC7 /* iChatOpener-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iChatOpener-Bridging-Header.h"; sourceTree = "<group>"; };
+		B572D08629E9F9E100B27EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B572D08729E9F9E100B27EC7 /* Presentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presentity.h; sourceTree = "<group>"; };
+		B572D08929E9F9E100B27EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B572D08A29E9F9E100B27EC7 /* InstantMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstantMessage.m; sourceTree = "<group>"; };
+		B572D08B29E9F9E100B27EC7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B572D08C29E9F9E100B27EC7 /* InstantMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstantMessage.h; sourceTree = "<group>"; };
+		B572D08D29E9F9E100B27EC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B572D08E29E9F9E100B27EC7 /* iChatDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iChatDocument.swift; sourceTree = "<group>"; };
+		B572D08F29E9F9E100B27EC7 /* iChatReaderApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iChatReaderApp.swift; sourceTree = "<group>"; };
+		B572D09029E9F9E100B27EC7 /* Presentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presentity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +88,9 @@
 		B53224EE29E07C3B0068A8A5 = {
 			isa = PBXGroup;
 			children = (
-				B53224F929E07C3B0068A8A5 /* iChatOpener */,
-				B532250E29E07C3C0068A8A5 /* iChatOpenerTests */,
-				B532251829E07C3C0068A8A5 /* iChatOpenerUITests */,
+				B572D08229E9F9E100B27EC7 /* iChatReader */,
+				B532250E29E07C3C0068A8A5 /* iChatReaderTests */,
+				B532251829E07C3C0068A8A5 /* iChatReaderUITests */,
 				B53224F829E07C3B0068A8A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,64 +98,64 @@
 		B53224F829E07C3B0068A8A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B53224F729E07C3B0068A8A5 /* iChatOpener.app */,
-				B532250B29E07C3C0068A8A5 /* iChatOpenerTests.xctest */,
-				B532251529E07C3C0068A8A5 /* iChatOpenerUITests.xctest */,
+				B53224F729E07C3B0068A8A5 /* iChatReader.app */,
+				B532250B29E07C3C0068A8A5 /* iChatReaderTests.xctest */,
+				B532251529E07C3C0068A8A5 /* iChatReaderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B53224F929E07C3B0068A8A5 /* iChatOpener */ = {
+		B532250E29E07C3C0068A8A5 /* iChatReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5196A7229E8C5DD00503BD4 /* iChatDecoder.swift */,
-				B532254E29E10D2F0068A8A5 /* InstantMessage.h */,
-				B532254C29E10D2F0068A8A5 /* InstantMessage.m */,
-				B532254D29E10D2F0068A8A5 /* Presentity.h */,
-				B532254F29E10D2F0068A8A5 /* Presentity.m */,
-				B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */,
-				B53224FC29E07C3B0068A8A5 /* iChatDocument.swift */,
-				B53224FE29E07C3B0068A8A5 /* ContentView.swift */,
-				B532250029E07C3C0068A8A5 /* Assets.xcassets */,
-				B532250529E07C3C0068A8A5 /* Info.plist */,
-				B532250629E07C3C0068A8A5 /* iChatOpener.entitlements */,
-				B532250229E07C3C0068A8A5 /* Preview Content */,
-				B532254A29E10D2F0068A8A5 /* iChatOpener-Bridging-Header.h */,
+				B532250F29E07C3C0068A8A5 /* iChatReaderTests.swift */,
 			);
-			path = iChatOpener;
+			path = iChatReaderTests;
 			sourceTree = "<group>";
 		};
-		B532250229E07C3C0068A8A5 /* Preview Content */ = {
+		B532251829E07C3C0068A8A5 /* iChatReaderUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B532250329E07C3C0068A8A5 /* Preview Assets.xcassets */,
+				B532251929E07C3C0068A8A5 /* iChatReaderUITests.swift */,
+				B532251B29E07C3C0068A8A5 /* iChatReaderUITestsLaunchTests.swift */,
+			);
+			path = iChatReaderUITests;
+			sourceTree = "<group>";
+		};
+		B572D08229E9F9E100B27EC7 /* iChatReader */ = {
+			isa = PBXGroup;
+			children = (
+				B572D08329E9F9E100B27EC7 /* iChatOpener.entitlements */,
+				B572D08429E9F9E100B27EC7 /* iChatDecoder.swift */,
+				B572D08529E9F9E100B27EC7 /* iChatOpener-Bridging-Header.h */,
+				B572D08629E9F9E100B27EC7 /* Assets.xcassets */,
+				B572D08729E9F9E100B27EC7 /* Presentity.h */,
+				B572D08829E9F9E100B27EC7 /* Preview Content */,
+				B572D08A29E9F9E100B27EC7 /* InstantMessage.m */,
+				B572D08B29E9F9E100B27EC7 /* ContentView.swift */,
+				B572D08C29E9F9E100B27EC7 /* InstantMessage.h */,
+				B572D08D29E9F9E100B27EC7 /* Info.plist */,
+				B572D08E29E9F9E100B27EC7 /* iChatDocument.swift */,
+				B572D08F29E9F9E100B27EC7 /* iChatReaderApp.swift */,
+				B572D09029E9F9E100B27EC7 /* Presentity.m */,
+			);
+			path = iChatReader;
+			sourceTree = "<group>";
+		};
+		B572D08829E9F9E100B27EC7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B572D08929E9F9E100B27EC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B532250E29E07C3C0068A8A5 /* iChatOpenerTests */ = {
-			isa = PBXGroup;
-			children = (
-				B532250F29E07C3C0068A8A5 /* iChatOpenerTests.swift */,
-			);
-			path = iChatOpenerTests;
-			sourceTree = "<group>";
-		};
-		B532251829E07C3C0068A8A5 /* iChatOpenerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B532251929E07C3C0068A8A5 /* iChatOpenerUITests.swift */,
-				B532251B29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift */,
-			);
-			path = iChatOpenerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B53224F629E07C3B0068A8A5 /* iChatOpener */ = {
+		B53224F629E07C3B0068A8A5 /* iChatReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B532251F29E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatOpener" */;
+			buildConfigurationList = B532251F29E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatReader" */;
 			buildPhases = (
 				B53224F329E07C3B0068A8A5 /* Sources */,
 				B53224F429E07C3B0068A8A5 /* Frameworks */,
@@ -164,16 +165,16 @@
 			);
 			dependencies = (
 			);
-			name = iChatOpener;
+			name = iChatReader;
 			packageProductDependencies = (
 			);
 			productName = iChatOpener;
-			productReference = B53224F729E07C3B0068A8A5 /* iChatOpener.app */;
+			productReference = B53224F729E07C3B0068A8A5 /* iChatReader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B532250A29E07C3C0068A8A5 /* iChatOpenerTests */ = {
+		B532250A29E07C3C0068A8A5 /* iChatReaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B532252229E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatOpenerTests" */;
+			buildConfigurationList = B532252229E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatReaderTests" */;
 			buildPhases = (
 				B532250729E07C3C0068A8A5 /* Sources */,
 				B532250829E07C3C0068A8A5 /* Frameworks */,
@@ -184,14 +185,14 @@
 			dependencies = (
 				B532250D29E07C3C0068A8A5 /* PBXTargetDependency */,
 			);
-			name = iChatOpenerTests;
+			name = iChatReaderTests;
 			productName = iChatOpenerTests;
-			productReference = B532250B29E07C3C0068A8A5 /* iChatOpenerTests.xctest */;
+			productReference = B532250B29E07C3C0068A8A5 /* iChatReaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B532251429E07C3C0068A8A5 /* iChatOpenerUITests */ = {
+		B532251429E07C3C0068A8A5 /* iChatReaderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B532252529E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatOpenerUITests" */;
+			buildConfigurationList = B532252529E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatReaderUITests" */;
 			buildPhases = (
 				B532251129E07C3C0068A8A5 /* Sources */,
 				B532251229E07C3C0068A8A5 /* Frameworks */,
@@ -202,9 +203,9 @@
 			dependencies = (
 				B532251729E07C3C0068A8A5 /* PBXTargetDependency */,
 			);
-			name = iChatOpenerUITests;
+			name = iChatReaderUITests;
 			productName = iChatOpenerUITests;
-			productReference = B532251529E07C3C0068A8A5 /* iChatOpenerUITests.xctest */;
+			productReference = B532251529E07C3C0068A8A5 /* iChatReaderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B53224F229E07C3B0068A8A5 /* Build configuration list for PBXProject "iChatOpener" */;
+			buildConfigurationList = B53224F229E07C3B0068A8A5 /* Build configuration list for PBXProject "iChatReader" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,9 +247,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B53224F629E07C3B0068A8A5 /* iChatOpener */,
-				B532250A29E07C3C0068A8A5 /* iChatOpenerTests */,
-				B532251429E07C3C0068A8A5 /* iChatOpenerUITests */,
+				B53224F629E07C3B0068A8A5 /* iChatReader */,
+				B532250A29E07C3C0068A8A5 /* iChatReaderTests */,
+				B532251429E07C3C0068A8A5 /* iChatReaderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,8 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B532250429E07C3C0068A8A5 /* Preview Assets.xcassets in Resources */,
-				B532250129E07C3C0068A8A5 /* Assets.xcassets in Resources */,
+				B572D09329E9F9E100B27EC7 /* Preview Assets.xcassets in Resources */,
+				B572D09229E9F9E100B27EC7 /* Assets.xcassets in Resources */,
+				B572D09629E9F9E100B27EC7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53224FB29E07C3B0068A8A5 /* iChatOpenerApp.swift in Sources */,
-				B532255329E10D2F0068A8A5 /* Presentity.m in Sources */,
-				B53224FD29E07C3B0068A8A5 /* iChatDocument.swift in Sources */,
-				B5196A7329E8C5DD00503BD4 /* iChatDecoder.swift in Sources */,
-				B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */,
-				B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */,
+				B572D09129E9F9E100B27EC7 /* iChatDecoder.swift in Sources */,
+				B572D09429E9F9E100B27EC7 /* InstantMessage.m in Sources */,
+				B572D09929E9F9E100B27EC7 /* Presentity.m in Sources */,
+				B572D09729E9F9E100B27EC7 /* iChatDocument.swift in Sources */,
+				B572D09529E9F9E100B27EC7 /* ContentView.swift in Sources */,
+				B572D09829E9F9E100B27EC7 /* iChatReaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B532251029E07C3C0068A8A5 /* iChatOpenerTests.swift in Sources */,
+				B532251029E07C3C0068A8A5 /* iChatReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B532251A29E07C3C0068A8A5 /* iChatOpenerUITests.swift in Sources */,
-				B532251C29E07C3C0068A8A5 /* iChatOpenerUITestsLaunchTests.swift in Sources */,
+				B532251A29E07C3C0068A8A5 /* iChatReaderUITests.swift in Sources */,
+				B532251C29E07C3C0068A8A5 /* iChatReaderUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +317,12 @@
 /* Begin PBXTargetDependency section */
 		B532250D29E07C3C0068A8A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B53224F629E07C3B0068A8A5 /* iChatOpener */;
+			target = B53224F629E07C3B0068A8A5 /* iChatReader */;
 			targetProxy = B532250C29E07C3C0068A8A5 /* PBXContainerItemProxy */;
 		};
 		B532251729E07C3C0068A8A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B53224F629E07C3B0068A8A5 /* iChatOpener */;
+			target = B53224F629E07C3B0068A8A5 /* iChatReader */;
 			targetProxy = B532251629E07C3C0068A8A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -513,7 +515,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iChatOpener.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iChatOpener";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iChatReader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iChatReader";
 			};
 			name = Debug;
 		};
@@ -531,7 +533,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iChatOpener.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iChatOpener";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iChatReader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iChatReader";
 			};
 			name = Release;
 		};
@@ -570,7 +572,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B53224F229E07C3B0068A8A5 /* Build configuration list for PBXProject "iChatOpener" */ = {
+		B53224F229E07C3B0068A8A5 /* Build configuration list for PBXProject "iChatReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B532251D29E07C3C0068A8A5 /* Debug */,
@@ -579,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B532251F29E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatOpener" */ = {
+		B532251F29E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B532252029E07C3C0068A8A5 /* Debug */,
@@ -588,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B532252229E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatOpenerTests" */ = {
+		B532252229E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatReaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B532252329E07C3C0068A8A5 /* Debug */,
@@ -597,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B532252529E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatOpenerUITests" */ = {
+		B532252529E07C3C0068A8A5 /* Build configuration list for PBXNativeTarget "iChatReaderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B532252629E07C3C0068A8A5 /* Debug */,
