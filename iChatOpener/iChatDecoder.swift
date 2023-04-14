@@ -9,18 +9,11 @@ import Foundation
 import AppKit
 
 func IChatDecoder(data: Data) -> [InstantMessage] {
-    NSKeyedArchiver.setClassName("InstantMessage", for: InstantMessage.self)
-    NSKeyedArchiver.setClassName("Presentity", for: Presentity.self)
-    NSKeyedArchiver.setClassName("NSFont", for: NSFont.self)
-    NSKeyedArchiver.setClassName("NSMutableParagraphStyle", for: NSMutableParagraphStyle.self)
-    NSKeyedArchiver.setClassName("NSTextAttachment", for: NSTextAttachment.self)
-    NSKeyedArchiver.setClassName("NSColor", for: NSColor.self)
-    
     let unarchiver = NSKeyedUnarchiver.init(forReadingWith: data as Data)
     
-    let root = unarchiver.decodeObject(forKey: "$root")
+    let root = unarchiver.decodeObject(forKey: NSKeyedArchiveRootObjectKey)
     var ims: [InstantMessage] = []
-    var people: NSMutableSet = []
+    var people: Set<String> = []
     
     for id in root as! any Sequence {
         if let obj = id as? NSArray {
@@ -28,10 +21,10 @@ func IChatDecoder(data: Data) -> [InstantMessage] {
                 if let im = sub as? InstantMessage {
                     ims.append(im)
                     if let _ = im.subject {
-                        people.add(im.subject.accountName!)
+                        people.insert(im.subject.accountName)
                     }
                     if let _ = im.sender {
-                        people.add(im.sender.accountName!)
+                        people.insert(im.sender.accountName)
                     }
                 }
             }
@@ -41,7 +34,7 @@ func IChatDecoder(data: Data) -> [InstantMessage] {
         if people.count > 2 {
             im.isMultiParty = true
         }
-        // im.participantIds = people
+        im.participantIds = people
         // im.chatId = root.lastObject
     }
     return ims

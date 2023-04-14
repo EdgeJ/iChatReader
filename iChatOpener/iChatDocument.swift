@@ -24,7 +24,7 @@ struct iChatDocument: FileDocument {
         let sender = Presentity()
         sender.accountName = "me"
         im.sender = sender
-        im.message = NSAttributedString(string: "Hello, world!")
+        im.message = NSAttributedString(string: text)
         self.messages = [im]
     }
 
