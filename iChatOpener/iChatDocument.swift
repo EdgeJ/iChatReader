@@ -14,7 +14,7 @@ extension UTType {
     }
 }
 
-struct iChatOpenerDocument: FileDocument {
+struct iChatDocument: FileDocument {
     // var text: String
     var messages: [InstantMessage]
 

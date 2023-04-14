@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var document: iChatOpenerDocument
+    @Binding var document: iChatDocument
 
     var body: some View {
         List(document.messages, id: \.self){ im in
@@ -25,6 +25,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(document: .constant(iChatOpenerDocument()))
+        ContentView(document: .constant(iChatDocument()))
     }
 }

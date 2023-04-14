@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct iChatOpenerApp: App {
     var body: some Scene {
-        DocumentGroup(viewing: iChatOpenerDocument.self) {
+        DocumentGroup(viewing: iChatDocument.self) {
             ContentView(document: $0.$document)
         }
     }

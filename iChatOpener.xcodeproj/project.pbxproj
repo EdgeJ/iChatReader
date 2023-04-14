@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B5196A7329E8C5DD00503BD4 /* iChatDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5196A7229E8C5DD00503BD4 /* iChatDecoder.swift */; };
 		B53224FB29E07C3B0068A8A5 /* iChatOpenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */; };
-		B53224FD29E07C3B0068A8A5 /* iChatOpenerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FC29E07C3B0068A8A5 /* iChatOpenerDocument.swift */; };
+		B53224FD29E07C3B0068A8A5 /* iChatDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FC29E07C3B0068A8A5 /* iChatDocument.swift */; };
 		B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53224FE29E07C3B0068A8A5 /* ContentView.swift */; };
 		B532250129E07C3C0068A8A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B532250029E07C3C0068A8A5 /* Assets.xcassets */; };
 		B532250429E07C3C0068A8A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B532250329E07C3C0068A8A5 /* Preview Assets.xcassets */; };
@@ -41,7 +41,7 @@
 		B5196A7229E8C5DD00503BD4 /* iChatDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatDecoder.swift; sourceTree = "<group>"; };
 		B53224F729E07C3B0068A8A5 /* iChatOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChatOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerApp.swift; sourceTree = "<group>"; };
-		B53224FC29E07C3B0068A8A5 /* iChatOpenerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatOpenerDocument.swift; sourceTree = "<group>"; };
+		B53224FC29E07C3B0068A8A5 /* iChatDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatDocument.swift; sourceTree = "<group>"; };
 		B53224FE29E07C3B0068A8A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B532250029E07C3C0068A8A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B532250329E07C3C0068A8A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				B532254D29E10D2F0068A8A5 /* Presentity.h */,
 				B532254F29E10D2F0068A8A5 /* Presentity.m */,
 				B53224FA29E07C3B0068A8A5 /* iChatOpenerApp.swift */,
-				B53224FC29E07C3B0068A8A5 /* iChatOpenerDocument.swift */,
+				B53224FC29E07C3B0068A8A5 /* iChatDocument.swift */,
 				B53224FE29E07C3B0068A8A5 /* ContentView.swift */,
 				B532250029E07C3C0068A8A5 /* Assets.xcassets */,
 				B532250529E07C3C0068A8A5 /* Info.plist */,
@@ -286,7 +286,7 @@
 			files = (
 				B53224FB29E07C3B0068A8A5 /* iChatOpenerApp.swift in Sources */,
 				B532255329E10D2F0068A8A5 /* Presentity.m in Sources */,
-				B53224FD29E07C3B0068A8A5 /* iChatOpenerDocument.swift in Sources */,
+				B53224FD29E07C3B0068A8A5 /* iChatDocument.swift in Sources */,
 				B5196A7329E8C5DD00503BD4 /* iChatDecoder.swift in Sources */,
 				B53224FF29E07C3B0068A8A5 /* ContentView.swift in Sources */,
 				B532255229E10D2F0068A8A5 /* InstantMessage.m in Sources */,
