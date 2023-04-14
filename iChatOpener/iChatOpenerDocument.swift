@@ -36,19 +36,17 @@ struct iChatOpenerDocument: FileDocument {
         }
         
         messages = []
-        let ims = IChatDecoder(data) as NSMutableArray
-        for i in ims {
-            if let im = i as? InstantMessage {
-                // Fallthrough to system user if no other user is found
-                if let _ = im.sender {
-                    // pass
-                } else {
-                    let sender = Presentity()
-                    sender.accountName = "System"
-                    im.sender = sender
-                }
-                messages.append(im)
+        let ims = IChatDecoder(data: data)
+        for im in ims {
+            // Fallthrough to system user if no other user is found
+            if let _ = im.sender {
+                // pass
+            } else {
+                let sender = Presentity()
+                sender.accountName = "System"
+                im.sender = sender
             }
+            messages.append(im)
         }
     }
     

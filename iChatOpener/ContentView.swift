@@ -16,7 +16,7 @@ struct ContentView: View {
                 Text(im.sender.accountName)
                     .font(.headline)
                 Text(im.message.string)
-                    //.font(Font.custom(im.messageFontName, size: im.messageFontSize))
+                    .font(Font.custom("Helvetica", size: 12))
                     .textSelection(.enabled)
             }
         }
