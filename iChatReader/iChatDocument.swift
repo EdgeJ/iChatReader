@@ -1,6 +1,6 @@
 //
-//  iChatOpenerDocument.swift
-//  iChatOpener
+//  iChatDocument.swift
+//  iChatReader
 //
 //  Created by John Edge on 4/7/23.
 //

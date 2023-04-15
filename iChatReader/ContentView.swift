@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  iChatOpener
+//  iChatReader
 //
 //  Created by John Edge on 4/7/23.
 //

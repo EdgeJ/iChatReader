@@ -1,6 +1,6 @@
 //
 //  iChatDecoder.swift
-//  iChatOpener
+//  iChatReader
 //
 //  Created by John Edge on 4/13/23.
 //
